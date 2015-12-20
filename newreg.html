@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<link href="bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src = "validate.js"></script>
+<script src="bootstrap.min.js"></script>
+<style>
+#eid{
+margin-top:10px;
+margin-left:120px;
+}
+#uname{
+margin-left:107px;
+}
+#pass{
+margin-left:108px;
+}
+#cpass{
+margin-left:50px;
+}
+#sub{
+margin-left:214px;
+margin-bottom:10px;
+color: white;
+background-color:navy;
+font-style:normal;
+width: 100px;
+height: 30px;
+-moz-border-radius: 10px;
+-webkit-border-radius:10px;
+ border-radius: 10px;
+}
+#sub:hover{
+color:navy;
+background-color:white;
+font-style:italic;
+}
+.down{
+color:navy; 
+background-color: white; 
+font-style: italic;
+}
+#title{
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+</head>
+<body background = "newregis.jpg">
+    <h1 align = "center" id = "title">New User Registration</h1>
+<form name = "NewUser" method = "Post" action = "Registration">
+<div class="col-xs-6 col-md-offset-3"  style="background-color:#dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+<b>Email id:</b><input type = "text" name = "email" id = "eid" required><br><br>
+<b>Username:</b><input type = "text" name= "name" id = "uname" required><br><br>
+<b>Password:</b><input type = "password" name = "password" id = "pass" required><br><br>
+<b>Confirm Password:</b><input type = "password" name = "confirmpass" id = "cpass" required><br><br>
+<input type = "Submit" value = "Register" id="sub" ONMOUSEDOWN="this.className='down'">
+</form>
+</body>
+</html>
